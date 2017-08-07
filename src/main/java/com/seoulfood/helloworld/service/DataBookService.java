@@ -8,5 +8,4 @@ public interface DataBookService {
 
     List<Book> selectAllBook();
 
-    String selectBookName(String id);
 }

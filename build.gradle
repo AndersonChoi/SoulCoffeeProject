@@ -26,22 +26,3 @@ dependencies {
             "org.springframework:spring-tx:4.3.9.RELEASE",
             "commons-dbcp:commons-dbcp:1.4"
 }
-
-// TODO: 프로젝트 구조 따라 초기화 스크립트 새로 작성 필요
-// 프로젝트 초기화
-// 1. java source directory 생성 : src/main/java, src/test/java
-// 2. resource directory 생성    : src/main/resource, src/test/resource
-// 3. web source directory 생성  : src/main/webapp, src/main/webapp/WEB-INF
-//task initProject(description: 'initialize project') {
-//    def createDir = {
-//        println "create source directory: $it"
-//         it.mkdirs() //유닉스용
-////        mkdir(it) //윈도우용
-//    }
-//    doLast {
-//        sourceSets*.java.srcDirs*.each createDir
-//        sourceSets*.resources.srcDirs*.each createDir
-//        createDir webAppDir
-//        createDir new File(webAppDir, '/WEB-INF')
-//    }
-//}

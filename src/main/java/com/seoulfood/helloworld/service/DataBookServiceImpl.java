@@ -5,23 +5,17 @@ import com.seoulfood.helloworld.domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
-@Service
+@Service("DataBookService")
 public class DataBookServiceImpl implements DataBookService {
 
-
-    @Autowired
+    @Resource(name="dataDAO")
     private DataBookDAO dataBookDAO;
 
-    @Override
     public List<Book> selectAllBook() {
         return dataBookDAO.getBookInfo();
-    }
-
-    @Override
-    public String selectBookName(String id) {
-        return dataBookDAO.getBookName(id);
     }
 
 }

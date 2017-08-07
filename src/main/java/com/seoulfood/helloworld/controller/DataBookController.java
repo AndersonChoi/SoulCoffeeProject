@@ -1,6 +1,7 @@
 package com.seoulfood.helloworld.controller;
 
 import com.seoulfood.helloworld.service.DataBookService;
+import com.seoulfood.helloworld.service.DataBookServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,10 +16,15 @@ public class DataBookController {
 
     private static final Logger logger = LoggerFactory.getLogger(DataBookController.class);
 
-    @Autowired
-    private DataBookService dataBookService;
+    private final DataBookService dataBookService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @Autowired
+    public DataBookController(DataBookService dataBookService) {
+        this.dataBookService = dataBookService;
+    }
+
+
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index(Model model) {
 
         logger.debug("index() is executed!");
@@ -43,7 +49,7 @@ public class DataBookController {
 
         logger.debug("getBookNameById() is executed!");
 
-        model.addAttribute("bookName", dataBookService.selectBookName(id));
+        //model.addAttribute("bookName", dataBookService.selectBookName(id));
 
         return "book";
     }
