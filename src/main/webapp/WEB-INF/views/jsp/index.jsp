@@ -20,6 +20,8 @@
         </c:if>
       </p>
     </div>
+     <a href="book.soul">go to book</a>
+     <a href="books.soul">go to books</a>
   </div>
 
   </body>
