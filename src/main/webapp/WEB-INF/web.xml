@@ -7,7 +7,7 @@
     <display-name>Seoul Coffee</display-name>
     <error-page>
         <error-code>404</error-code>
-        <location>/WEB-INF/views/jsp/error404.jsp</location>
+        <location>/WEB-INF/views/jsp/error/error404.jsp</location>
     </error-page>
 
     <servlet>
