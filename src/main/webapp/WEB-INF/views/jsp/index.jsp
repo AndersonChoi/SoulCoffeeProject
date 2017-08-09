@@ -9,15 +9,9 @@
 
    <div class="wrap">
     <div class="container">
-      <h1>${title}</h1>
+      <h1>Seoul Coffee</h1>
       <p>
-        <c:if test="${not empty msg}">
-          Hello ${msg}
-        </c:if>
-
-        <c:if test="${empty msg}">
-          Welcome Welcome!
-        </c:if>
+          dfgsdgaag
       </p>
     </div>
      <a href="book.soul">go to book</a>
