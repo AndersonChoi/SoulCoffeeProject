@@ -7,19 +7,18 @@
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/resources/css/soulcoffee.css">
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css">
     <script src="/resources/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        body {padding-top: 70px; }
-    </style>
 </head>
 <body>
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -28,23 +27,6 @@
             <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="../navbar/">Default</a></li>
                 <li><a href="../navbar-static-top/">Static top</a></li>
@@ -54,114 +36,46 @@
     </div>
 </nav>
 
-<div class="container">
 
-
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
-    </div>
-
-    <div class="jumbotron">
-        <h1>Seoul Coffee</h1>
-        <p>
-            ㄴㄴㄴㄴㄴㄴㄴ
+<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); background-size: 100%">
+    <div class="container">
+        <h1 style="color:white;">Black Drum</h1>
+        <p style="color:white;">
+            아주향긋하고 좋은 커피
         </p>
     </div>
+</div>
 
-    <div class="jumbotron">
-        <h1>Seoul Coffee</h1>
-        <p>
-            ㄴㄴㄴㄴㄴㄴㄴ
+
+<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); background-size: 100%">
+    <div class="container">
+        <h1 style="color:white;">Starbucks</h1>
+        <p style="color:white;">
+            북유럽의 커피강자
         </p>
     </div>
+</div>
 
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
+<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); background-size: 100%">
+    <div class="container">
+        <h1 style="color:white;">Twosome place</h1>
+        <p style="color:white;">
+            둘이먹다 하나 죽어도 모르는 커피
+        </p>
     </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
+</div>
+
+<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg); background-size: 100%">
+    <div class="container">
+        <h1 style="color:white;">Black Drum</h1>
+        <p style="color:white;">
+            아주향긋하고 좋은 커피
+        </p>
     </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Seoul Coffee</h1>
-            <p>
-                ㄴㄴㄴㄴㄴㄴㄴ
-            </p>
-        </div>
-    </div>
-    <a href="book.soul">go to book</a>
-    <a href="books.soul">go to books</a>
-    </div>
+</div>
+
+
+<a href="book.soul">go to book</a>
+<a href="books.soul">go to books</a>
 </body>
 </html>
