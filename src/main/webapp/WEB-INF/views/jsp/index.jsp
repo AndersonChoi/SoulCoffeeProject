@@ -31,7 +31,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_main"
                     aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -40,11 +40,11 @@
             </button>
             <a class="navbar-brand" href="#">Soul Coffee</a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div id="navbar_main" class="collapse navbar-collapse ">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="../navbar/">Default</a></li>
-                <li><a href="../navbar-static-top/">Static top</a></li>
-                <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Default</a></li>
+                <li><a href="#">Static top</a></li>
+                <li class="active"><a href="#">Fixed top <span class="sr-only">(current)</span></a></li>
             </ul>
         </div>
     </div>
@@ -53,7 +53,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
     <div class="container">
-        <h1 style="color:white;">Black Drum</h1>
+        <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
             아주향긋하고 좋은 커피
         </p>
@@ -63,7 +63,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
     <div class="container">
-        <h1 style="color:white;">Starbucks</h1>
+        <h1 class="main_title" style="color:white;">Starbucks</h1>
         <p style="color:white;">
             북유럽의 커피강자
         </p>
@@ -72,7 +72,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
     <div class="container">
-        <h1 style="color:white;">Twosome place</h1>
+        <h1 class="main_title" style="color:white;">Twosome place</h1>
         <p style="color:white;">
             둘이먹다 하나 죽어도 모르는 커피
         </p>
@@ -80,8 +80,8 @@
 </div>
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg);">
-    <div class="container">
-        <h1 style="color:white;">Black Drum</h1>
+    <div index.jspclass="container">
+        <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
             아주향긋하고 좋은 커피
         </p>
@@ -92,7 +92,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
     <div class="container">
-        <h1 style="color:white;">Black Drum</h1>
+        <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
             아주향긋하고 좋은 커피
         </p>
@@ -102,7 +102,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
     <div class="container">
-        <h1 style="color:white;">Starbucks</h1>
+        <h1 class="main_title" style="color:white;">Starbucks</h1>
         <p style="color:white;">
             북유럽의 커피강자
         </p>
@@ -111,7 +111,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
     <div class="container">
-        <h1 style="color:white;">Twosome place</h1>
+        <h1 class="main_title" style="color:white;">Twosome place</h1>
         <p style="color:white;">
             둘이먹다 하나 죽어도 모르는 커피
         </p>
@@ -120,7 +120,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg);">
     <div class="container">
-        <h1 style="color:white;">Black Drum</h1>
+        <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
             아주향긋하고 좋은 커피
         </p>
@@ -131,7 +131,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
     <div class="container">
-        <h1 style="color:white;">Black Drum</h1>
+        <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
             아주향긋하고 좋은 커피
         </p>
@@ -141,7 +141,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
     <div class="container">
-        <h1 style="color:white;">Starbucks</h1>
+        <h1 class="main_title" style="color:white;">Starbucks</h1>
         <p style="color:white;">
             북유럽의 커피강자
         </p>
@@ -150,7 +150,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
     <div class="container">
-        <h1 style="color:white;">Twosome place</h1>
+        <h1 class="main_title" style="color:white;">Twosome place</h1>
         <p style="color:white;">
             둘이먹다 하나 죽어도 모르는 커피
         </p>
@@ -159,7 +159,7 @@
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg);">
     <div class="container">
-        <h1 style="color:white;">Black Drum</h1>
+        <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
             아주향긋하고 좋은 커피
         </p>

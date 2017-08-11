@@ -11,3 +11,15 @@ body {
     margin-left: -65px;
     left: 50%;
 }
+.main_title {
+
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+    background-image: url(/resources/img/title_back.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight:bold;
+    font-size:34px;
+    line-height:50px;
+
+}
