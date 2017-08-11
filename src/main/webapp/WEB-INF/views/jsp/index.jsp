@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>SeoulCoffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
@@ -173,7 +174,7 @@
 
 
 <a id="map_button" href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-map-marker"></span> Soul Map
+    <span class="glyphicon glyphicon-map-marker"></span>
 </a>
 
 
