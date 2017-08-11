@@ -1,5 +1,13 @@
 
 body {
-    padding-top: 70px;
+    padding-top: 40px;
     background: black;
+}
+
+#map_button {
+    position: fixed;
+    bottom: 4%;
+    width: 130px;
+    margin-left: -65px;
+    left: 50%;
 }
