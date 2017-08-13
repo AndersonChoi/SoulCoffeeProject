@@ -27,31 +27,18 @@ public class DataBookController {
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index(Model model) {
 
-        logger.debug("index() is executed!");
-
         model.addAttribute("title", "Hello Title");
         model.addAttribute("msg", "Hello Message");
 
         return "index";
     }
 
-    @RequestMapping(value = "/books", method = RequestMethod.GET)
+    @RequestMapping(value = "/storeDetail", method = RequestMethod.GET)
     public String getAllBooks(Model model) {
-        logger.debug("getAllBooks() is executed!");
 
-        model.addAttribute("books", dataBookService.selectAllBook());
 
-        return "books";
+        return "storeDetail";
     }
 
-    @RequestMapping(value = "/books/{id}", method = RequestMethod.GET)
-    public String getBookNameById(@PathVariable("id") String id, Model model) {
-
-        logger.debug("getBookNameById() is executed!");
-
-        //model.addAttribute("bookName", dataBookService.selectBookName(id));
-
-        return "book";
-    }
 
 }

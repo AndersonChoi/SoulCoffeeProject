@@ -1,32 +1,42 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: anderson
+  Date: 2017. 8. 13.
+  Time: PM 1:22
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>SeoulCoffee</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css">
-    <script src="/resources/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/resources/css/soulcoffee.css">
-    <script type="text/javascript">
+    <title><%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+        <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+        <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+        <html>
+        <head>
+            <title>SeoulCoffee</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="http://code.jquery.com/jquery-2.2.4.min.js"
+                    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                    crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+            <link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css">
+            <script src="/resources/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="/resources/css/soulcoffee.css">
+            <script type="text/javascript">
 
-        function initializePage() {
+                function initializePage() {
 
-            $('.jumbotron').css("margin", "0px");
-            $('.jumbotron').css("background-size", "100%");
-        }
+                    $('.jumbotron').css("margin", "0px");
+                    $('.jumbotron').css("background-size", "100%");
+                }
 
-        $(window).load(function () {
-            initializePage();
-        });
+                $(window).load(function () {
+                    initializePage();
+                });
 
 
-    </script>
-</head>
+            </script>
+        </head>
 <body>
 <!-- Fixed navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -58,12 +68,6 @@
         <p style="color:white;">
             아주향긋하고 좋은 커피
         </p>
-    </div>
-    <hr>
-    <div class="container">
-        <span class="jumbotron_goto_shop">
-            Something to drink.. <span class="glyphicon glyphicon-glass"></span>
-        </span>
     </div>
 </div>
 
@@ -183,6 +187,11 @@
     <span class="glyphicon glyphicon-map-marker"></span>
 </a>
 
+
+</body>
+</html></title>
+</head>
+<body>
 
 </body>
 </html>

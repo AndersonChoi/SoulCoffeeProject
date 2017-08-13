@@ -22,3 +22,20 @@ body {
     line-height:50px;
 
 }
+
+.navbar-left {
+    float:left;
+    margin-left:15px;
+    padding:6px 10px;
+}
+
+.navbar-brand {
+    color:white;
+}
+.jumbotron_goto_shop{
+    position: relative;
+    float : right;
+    top: 5px;
+    right: 5px;
+    color:white;
+}
