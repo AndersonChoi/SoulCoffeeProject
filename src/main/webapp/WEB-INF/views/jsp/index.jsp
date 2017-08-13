@@ -25,6 +25,13 @@
         });
 
 
+        $("#main_menu").click(function(){
+            location.href="/storeDetail.soul";
+
+        });
+
+
+
     </script>
 </head>
 <body>
@@ -69,7 +76,7 @@
 
 
 <div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
-    <div class="container">
+    <div id="main_menu"  class="container">
         <h1 class="main_title" style="color:white;">Starbucks</h1>
         <p style="color:white;">
             북유럽의 커피강자

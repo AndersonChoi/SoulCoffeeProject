@@ -2,6 +2,7 @@
 body {
     padding-top: 40px;
     background: black;
+
 }
 
 #map_button {
@@ -10,32 +11,58 @@ body {
     margin-left: -15px;
     left: 50%;
 }
+
 .main_title {
 
-    -webkit-text-fill-color:transparent;
-    color:transparent;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     background-image: url(/resources/img/title_back.jpg);
     -webkit-background-clip: text;
     background-clip: text;
-    font-weight:bold;
-    font-size:34px;
-    line-height:50px;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 50px;
 
 }
 
 .navbar-left {
-    float:left;
-    margin-left:15px;
-    padding:6px 10px;
+    float: left;
+    margin-left: 15px;
+    padding: 6px 10px;
 }
 
 .navbar-brand {
-    color:white;
+    color: white;
 }
-.jumbotron_goto_shop{
+
+.jumbotron_goto_shop {
     position: relative;
-    float : right;
+    float: right;
     top: 5px;
     right: 5px;
-    color:white;
+    color: white;
+}
+
+.store_detail_infomation {
+    color: white;
+}
+
+.store_detail_info_title {
+    color: lightgray;
+}
+
+.store_detail_map {
+    width: 100%;
+    height: 100px;
+}
+.store_map{
+    width: 100%;
+    height: 100%;
+}
+
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
 }

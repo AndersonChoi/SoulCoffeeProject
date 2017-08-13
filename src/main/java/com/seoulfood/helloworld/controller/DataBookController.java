@@ -34,11 +34,17 @@ public class DataBookController {
     }
 
     @RequestMapping(value = "/storeDetail", method = RequestMethod.GET)
-    public String getAllBooks(Model model) {
+    public String storeDetail(Model model) {
 
 
         return "storeDetail";
     }
 
+    @RequestMapping(value = "/map", method = RequestMethod.GET)
+    public String map(Model model) {
+
+
+        return "map";
+    }
 
 }
