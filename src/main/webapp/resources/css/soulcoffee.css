@@ -13,17 +13,36 @@ body {
 }
 
 .main_title {
-
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    background-image: url(/resources/img/title_back.jpg);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 50px;
+color:white;
 
 }
+.main_title_background{
+    height:200px;
+    position:relative;
+    padding: 0;
+}
+.main_layer{
+    padding: 0;
+    height:200px;
+    background: rgba(0,0,0,0.4);
+}
+.main_title_layer{
+    position:absolute; left:0px; bottom:0px;
+    color:white;
+
+}
+.main_info{
+    font-size: 70%;
+}
+.main_goto_shop {
+    position:absolute; right:0px; bottom:0px;
+    color:white;
+    padding:10px;
+}
+.main_final_price{
+    font-size: 200%;
+}
+
 
 .navbar-left {
     float: left;
@@ -31,24 +50,20 @@ body {
     padding: 6px 10px;
 }
 
-.navbar-brand {
-    color: white;
-}
-
-.jumbotron_goto_shop {
-    position: relative;
-    float: right;
-    top: 5px;
-    right: 5px;
-    color: white;
-}
-
 .store_detail_infomation {
     color: white;
 }
-
+.store_detail_infomation_layer{
+    background:black;
+}
 .store_detail_info_title {
-    color: lightgray;
+    color: slategrey;
+}
+.table{
+    color : white;
+}
+.bottom_table td {
+    text-align: center;
 }
 
 .store_detail_map {
@@ -65,4 +80,8 @@ footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: #f4511e;
+}
+
+.navbar .container .navbar-header .navbar-brand {
+    color: white;
 }

@@ -18,18 +18,17 @@
 
             $('.jumbotron').css("margin", "0px");
             $('.jumbotron').css("background-size", "100%");
+
+
+            $("#main_button").click(function (e) {
+                location.href = '/storeDetail.soul';
+            });
+
         }
 
         $(window).load(function () {
             initializePage();
         });
-
-
-        $("#main_menu").click(function(){
-            location.href="/storeDetail.soul";
-
-        });
-
 
 
     </script>
@@ -59,134 +58,89 @@
 </nav>
 
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Black Drum</h1>
-        <p style="color:white;">
-            아주향긋하고 좋은 커피
+<div id="main_button" class="container-fluid main_title_background" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
+    <div class="main_layer">
+    <div class="container main_title_layer">
+        <h3 class="main_title" style="color:white;">Black Drum</h3>
+        <p class="main_info">
+            향긋한 커피와 서울역의 만남<br>
+            서울스퀘어 1층 | 10:00 ~ 22:00
         </p>
     </div>
-    <hr>
-    <div class="container">
-        <span class="jumbotron_goto_shop">
-            Something to drink.. <span class="glyphicon glyphicon-glass"></span>
-        </span>
+    <div class="container-fluid main_goto_shop text-right">
+        <span class="text-right"><del>4,500원</del></span>
+        <span class="text-right main_final_price">2,000원</span>
     </div>
-</div>
-
-
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
-    <div id="main_menu"  class="container">
-        <h1 class="main_title" style="color:white;">Starbucks</h1>
-        <p style="color:white;">
-            북유럽의 커피강자
-        </p>
-    </div>
-</div>
-
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Twosome place</h1>
-        <p style="color:white;">
-            둘이먹다 하나 죽어도 모르는 커피
-        </p>
-    </div>
-</div>
-
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg);">
-    <div index.jspclass="container">
-        <h1 class="main_title" style="color:white;">Black Drum</h1>
-        <p style="color:white;">
-            아주향긋하고 좋은 커피
-        </p>
     </div>
 </div>
 
 
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Black Drum</h1>
-        <p style="color:white;">
-            아주향긋하고 좋은 커피
-        </p>
+<div id="main_button" class="container-fluid main_title_background" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
+    <div class="main_layer">
+        <div class="container main_title_layer">
+            <h3 class="main_title" style="color:white;">아메리칸 트럭</h3>
+            <p class="main_info">
+                커피매니아의 고향<br>
+                서울스퀘어 1층 | 10:00 ~ 22:00
+            </p>
+        </div>
+        <div class="container-fluid main_goto_shop text-right">
+            <span class="text-right"><del>3,500원</del></span>
+            <span class="text-right main_final_price">1,000원</span>
+        </div>
     </div>
 </div>
 
-
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Starbucks</h1>
-        <p style="color:white;">
-            북유럽의 커피강자
-        </p>
+<div id="main_button" class="container-fluid main_title_background" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
+    <div class="main_layer">
+        <div class="container main_title_layer">
+            <h3 class="main_title" style="color:white;">STAR BUCKS</h3>
+            <p class="main_info">
+                커피매니아의 고향<br>
+                서울스퀘어 1층 | 10:00 ~ 22:00
+            </p>
+        </div>
+        <div class="container-fluid main_goto_shop text-right">
+            <span class="text-right"><del>4,500원</del></span>
+            <span class="text-right main_final_price">2,000원</span>
+        </div>
     </div>
 </div>
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Twosome place</h1>
-        <p style="color:white;">
-            둘이먹다 하나 죽어도 모르는 커피
-        </p>
-    </div>
-</div>
-
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg);">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Black Drum</h1>
-        <p style="color:white;">
-            아주향긋하고 좋은 커피
-        </p>
-    </div>
-</div>
-
-
-
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Black Drum</h1>
-        <p style="color:white;">
-            아주향긋하고 좋은 커피
-        </p>
-    </div>
-</div>
-
-
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Starbucks</h1>
-        <p style="color:white;">
-            북유럽의 커피강자
-        </p>
-    </div>
-</div>
-
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Twosome place</h1>
-        <p style="color:white;">
-            둘이먹다 하나 죽어도 모르는 커피
-        </p>
-    </div>
-</div>
-
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg);">
-    <div class="container">
-        <h1 class="main_title" style="color:white;">Black Drum</h1>
-        <p style="color:white;">
-            아주향긋하고 좋은 커피
-        </p>
+<div id="main_button" class="container-fluid main_title_background" style="background-image: url(/resources/img/jumbotron_bg4.jpg); ">
+    <div class="main_layer">
+        <div class="container main_title_layer">
+            <h3 class="main_title" style="color:white;">투썸플레이스</h3>
+            <p class="main_info">
+                커피매니아의 고향<br>
+                서울스퀘어 1층 | 10:00 ~ 22:00
+            </p>
+        </div>
+        <div class="container-fluid main_goto_shop text-right">
+            <span class="text-right"><del>4,500원</del></span>
+            <span class="text-right main_final_price">2,000원</span>
+        </div>
     </div>
 </div>
 
 
 
-<a href="book.soul">go to book</a>
-<a href="books.soul">go to books</a>
 
 
-<a id="map_button" href="#" class="btn btn-default btn-lg">
+
+
+
+
+
+<footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-us"></span>
+    </a>
+    <p>Bootstrap Theme Made By <a href="#">wonyoung....</a></p>
+</footer>
+
+<a id="map_button" href="/map.soul" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-map-marker"></span>
 </a>
 

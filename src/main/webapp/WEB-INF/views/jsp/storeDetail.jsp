@@ -21,7 +21,7 @@
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 16,
                 scrollwheel: false,
-                draggable:false,
+                draggable: false,
                 center: uluru
             });
             var marker = new google.maps.Marker({
@@ -30,8 +30,7 @@
             });
 
 
-
-            $("footer a[href='#myPage']").on('click', function(event) {
+            $("footer a[href='#myPage']").on('click', function (event) {
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
                     // Prevent default anchor click behavior
@@ -44,7 +43,7 @@
                     // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 900, function(){
+                    }, 900, function () {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
@@ -61,38 +60,55 @@
         });
 
 
-
-
     </script>
 </head>
-<body id="myPage" >
+<body id="myPage">
 <!-- Fixed navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-        <button onclick="javascript:history.back();" type="button" class="navbar-toggle navbar-left"><span class="glyphicon glyphicon-chevron-left" style="color:white"></span></button>
+        <button onclick="javascript:history.back();" type="button" class="navbar-toggle navbar-left"><span
+                class="glyphicon glyphicon-chevron-left" style="color:white"></span></button>
         <div class="navbar-header">
             <a class="navbar-brand" href="#">Soul Coffee</a>
         </div>
     </div>
 </nav>
+<div class="container store_detail_infomation_layer">
+    <div class="container">
 
+        <img src="/resources/img/jumbotron_bg4.jpg" class="img-responsive" alt="Responsive image">
 
-<hr>
-<div class="container">
-<img src="/resources/img/jumbotron_bg4.jpg" class="img-responsive" alt="Responsive image">
+    </div>
 
     <div class="store_detail_infomation">
-        <h1 class="store_detail_info_title" >Black Drum</h1>
-        <blockquote>
-            <p>탁트인날씨가 바로보이는 창문이 넓게 펼쳐져 있다. 넓은 자리와 어울어진 강배전의 커피향은 커피와 관련된 추억에 풍덩빠지기 좋다. </p>
-            <footer>커피를 사랑하는 바리스타</footer>
-        </blockquote>
-        <dl class="row">
-            <dt class="col-sm-7">아메리카노</dt>
-            <dd class="col-sm-5">- 4000원(takeout 2800원)</dd>
-            <dt class="col-sm-7">밀크티</dt>
-            <dd class="col-sm-5">- 4500원(takeout 3300원)</dd>
-        </dl>
+        <h1 class="store_detail_info_title">Black Drum</h1>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>메뉴</th>
+                <th>here</th>
+                <th>to go</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>아메리카노</td>
+                <td>4500원</td>
+                <td>2800원</td>
+            </tr>
+            <tr>
+                <td>밀크티</td>
+                <td>5500원</td>
+                <td>3400원</td>
+            </tr>
+            <tr>
+                <td>에이드</td>
+                <td>6000원</td>
+                <td>4500원</td>
+            </tr>
+            </tbody>
+        </table>
         여기에 제목 및 내용 그리고 주소 좋아요수 등이 들어갑니다 - 준영
     </div>
 </div>
@@ -103,19 +119,29 @@
     <hr>
 </div>
 <a href="/map.soul">
-    <div id="map" class="store_detail_map" ></div>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCa0rIVaCLdOwzV8WyKUY9rS0PpcWZQDsM"></script>
+    <div id="map" class="store_detail_map"></div>
+    <script type="text/javascript"
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCa0rIVaCLdOwzV8WyKUY9rS0PpcWZQDsM"></script>
 </a>
 <div class="container-fluid">
     <hr>
-    여기에 다른곳으로 갈 수있는 위치가들어갑니다 - 원영
-</div>
 
+    <table class="table bottom_table">
+        <tbody>
+        <tr>
+            <td><span class="glyphicon glyphicon-chevron-left" style="color:white"></span></td>
+            <td><span class="glyphicon glyphicon-chevron-left" style="color:white"></span></td>
+            <td><span class="glyphicon glyphicon-chevron-left" style="color:white"></span></td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+</div>
 <footer class="container-fluid text-center">
     <a href="#myPage" title="To Top">
         <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>Bootstrap Theme Made By <a href="#" >wonyoung....</a></p>
+    <p>Bootstrap Theme Made By <a href="#">wonyoung....</a></p>
 </footer>
 
 </body>
