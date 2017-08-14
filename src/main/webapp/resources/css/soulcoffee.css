@@ -2,6 +2,7 @@
 body {
     padding-top: 40px;
     background: black;
+
 }
 
 #map_button {
@@ -10,15 +11,77 @@ body {
     margin-left: -15px;
     left: 50%;
 }
+
 .main_title {
+color:white;
 
-    -webkit-text-fill-color:transparent;
-    color:transparent;
-    background-image: url(/resources/img/title_back.jpg);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight:bold;
-    font-size:34px;
-    line-height:50px;
+}
+.main_title_background{
+    height:200px;
+    position:relative;
+    padding: 0;
+}
+.main_layer{
+    padding: 0;
+    height:200px;
+    background: rgba(0,0,0,0.4);
+}
+.main_title_layer{
+    position:absolute; left:0px; bottom:0px;
+    color:white;
 
+}
+.main_info{
+    font-size: 70%;
+}
+.main_goto_shop {
+    position:absolute; right:0px; bottom:0px;
+    color:white;
+    padding:10px;
+}
+.main_final_price{
+    font-size: 200%;
+}
+
+
+.navbar-left {
+    float: left;
+    margin-left: 15px;
+    padding: 6px 10px;
+}
+
+.store_detail_infomation {
+    color: white;
+}
+.store_detail_infomation_layer{
+    background:black;
+}
+.store_detail_info_title {
+    color: slategrey;
+}
+.table{
+    color : white;
+}
+.bottom_table td {
+    text-align: center;
+}
+
+.store_detail_map {
+    width: 100%;
+    height: 100px;
+}
+.store_map{
+    width: 100%;
+    height: 100%;
+}
+
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+
+.navbar .container .navbar-header .navbar-brand {
+    color: white;
 }
