@@ -3,16 +3,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.seoulfood.helloworld.dao.DataBookDAO"> <!-- DAO를 직접 연결해준다 -->
-    <select id="getBookInfo" resultType="com.seoulfood.helloworld.domain.Book">
+    <select id="findAllCafe" resultType="com.seoulfood.helloworld.domain.Cafe">
         SELECT
-            ID,
-            NAME,
-            WRITER,
-            PRICE,
-            GENRE,
-            PUBLISHER,
-            CNT
-        FROM BOOKS
+            *
+        FROM SEOULFOOD.SOUL_FOOD_CAFE_LIST
     </select>
     <select id="getBookName" parameterType="string" resultType="string">
         SELECT
@@ -21,4 +15,5 @@
         WHERE
             ID = #{id}
     </select>
+
 </mapper>
