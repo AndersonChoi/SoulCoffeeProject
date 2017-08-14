@@ -62,7 +62,7 @@
 </nav>
 
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
+<div class="jumbotron" style="background-image: url(/resources/img/1.jpg); ">
     <div class="container">
         <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
@@ -72,7 +72,7 @@
 </div>
 
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
+<div class="jumbotron" style="background-image: url(/resources/img/2.jpg); ">
     <div class="container">
         <h1 class="main_title" style="color:white;">Starbucks</h1>
         <p style="color:white;">
@@ -81,7 +81,7 @@
     </div>
 </div>
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
+<div class="jumbotron" style="background-image: url(/resources/img/3.jpg); ">
     <div class="container">
         <h1 class="main_title" style="color:white;">Twosome place</h1>
         <p style="color:white;">
@@ -101,7 +101,7 @@
 
 
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
+<div class="jumbotron" style="background-image: url(/resources/img/1.jpg); ">
     <div class="container">
         <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
@@ -111,7 +111,7 @@
 </div>
 
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
+<div class="jumbotron" style="background-image: url(/resources/img/2.jpg); ">
     <div class="container">
         <h1 class="main_title" style="color:white;">Starbucks</h1>
         <p style="color:white;">
@@ -120,7 +120,7 @@
     </div>
 </div>
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
+<div class="jumbotron" style="background-image: url(/resources/img/3.jpg); ">
     <div class="container">
         <h1 class="main_title" style="color:white;">Twosome place</h1>
         <p style="color:white;">
@@ -140,7 +140,7 @@
 
 
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
+<div class="jumbotron" style="background-image: url(/resources/img/1.jpg); ">
     <div class="container">
         <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
@@ -150,7 +150,7 @@
 </div>
 
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg2.jpg); ">
+<div class="jumbotron" style="background-image: url(/resources/img/2.jpg); ">
     <div class="container">
         <h1 class="main_title" style="color:white;">Starbucks</h1>
         <p style="color:white;">
@@ -159,7 +159,7 @@
     </div>
 </div>
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg3.jpg); ">
+<div class="jumbotron" style="background-image: url(/resources/img/3.jpg); ">
     <div class="container">
         <h1 class="main_title" style="color:white;">Twosome place</h1>
         <p style="color:white;">

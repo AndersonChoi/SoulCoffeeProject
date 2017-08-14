@@ -53,24 +53,22 @@
     </div>
 </nav>
 <c:forEach var="cafe" items="${cafes}">
-    <div id="main_button" class="container-fluid main_title_background" style="background-image: url(/resources/img/jumbotron_bg.jpg); ">
-        <div class="main_layer">
-            <div class="container main_title_layer">
-                <h4 class="main_title" style="color:white;">${cafe.cafe_nm}</h4>
-                <p class="main_info">
-                        ${cafe.road_addr_base} | ${cafe.cafe_bgn_tm} ~ ${cafe.cafe_end_tm}
-                </p>
+    <div id="main_button" class="container-fluid main_title_background"
+         style="background-image: url(/resources/img/${cafe.cafe_seq_no}.jpg); ">
+        <div class="main_dim">
+            <div class="main_title">
+                <h3 class="cafe_title">${cafe.cafe_nm}</h3>
+                <p class="text-left">${cafe.road_addr_base} | ${cafe.cafe_bgn_tm} ~ ${cafe.cafe_end_tm}</p>
             </div>
-            <div class="container-fluid main_goto_shop text-right">
-                <span class="text-right"><del>4,500원</del></span>
-                <span class="text-right main_final_price">2,000원</span>
+            <div class="main_layer">
+                <p class="text-right">
+                    <del>4,500원</del>
+                </p>
+                <p class="text-right main_final_price">2,000원</p>
             </div>
         </div>
     </div>
 </c:forEach>
-
-
-
 
 <footer class="container-fluid text-center">
     <a href="#myPage" title="To Top">
@@ -79,9 +77,11 @@
     <p>Bootstrap Theme Made By <a href="#">wonyoung....</a></p>
 </footer>
 
+
+<!--
 <a id="map_button" href="/map.soul" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-map-marker"></span>
-</a>
+</a>-->
 
 
 </body>
