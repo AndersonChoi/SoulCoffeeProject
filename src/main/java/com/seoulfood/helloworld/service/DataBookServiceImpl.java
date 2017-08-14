@@ -2,6 +2,7 @@ package com.seoulfood.helloworld.service;
 
 import com.seoulfood.helloworld.dao.DataBookDAO;
 import com.seoulfood.helloworld.domain.Book;
+import com.seoulfood.helloworld.domain.Cafe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,9 @@ public class DataBookServiceImpl implements DataBookService {
 
     public List<Book> selectAllBook() {
         return dataBookDAO.getBookInfo();
+    }
+    public List<Cafe> findAllCafe() {
+        return dataBookDAO.findAllCafe();
     }
 
 }

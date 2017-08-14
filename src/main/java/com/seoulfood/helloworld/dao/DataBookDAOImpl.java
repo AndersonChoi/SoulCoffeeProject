@@ -1,6 +1,7 @@
 package com.seoulfood.helloworld.dao;
 
 import com.seoulfood.helloworld.domain.Book;
+import com.seoulfood.helloworld.domain.Cafe;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -19,4 +20,8 @@ public class DataBookDAOImpl implements DataBookDAO{
     public List<Book> getBookInfo(){
         return sqlSession.selectList("getBookInfo");
     }
+    public List<Cafe> findAllCafe(){
+        return sqlSession.selectList("findAllCafe");
+    }
+
 }

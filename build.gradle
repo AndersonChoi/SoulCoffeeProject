@@ -24,4 +24,6 @@ dependencies {
             "org.springframework:spring-jdbc:4.3.9.RELEASE",
             "org.springframework:spring-tx:4.3.9.RELEASE",
             "commons-dbcp:commons-dbcp:1.4"
+    compileOnly "org.projectlombok:lombok:1.16.16"
+    compile 'org.json:json:20090211'
 }
