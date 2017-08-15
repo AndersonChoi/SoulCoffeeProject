@@ -1,5 +1,6 @@
 package com.seoulfood.helloworld.controller;
 
+import com.seoulfood.helloworld.api.InstagramParserAPI;
 import com.seoulfood.helloworld.domain.Cafe;
 import com.seoulfood.helloworld.service.DataBookService;
 import org.json.JSONArray;
@@ -49,13 +50,16 @@ public class DataBookController {
     }
 
     @RequestMapping(value = "/storeDetail", method = RequestMethod.GET)
-    public String storeDetail(Model model, @RequestParam(value = "code", required = false) String code) {
+    public String storeDetail(Model model, @RequestParam(value = "code", required = false) String code) throws Exception{
         boolean isRedirectNeeded = false;
 
         final String CLIENT_ID = "eee7a84a96814addbf63e38a4f75980c";
         final String CLIENT_SECRET = "cb0ce6bc07de49ca96648f8ce857a837";
         final String REDIRECT_URL = "http://localhost:8801/storeDetail.soul";
         final String URL = String.format("https://api.instagram.com/oauth/authorize/?client_id=%s&redirect_uri=%s&response_type=code", CLIENT_ID, REDIRECT_URL);
+
+        InstagramParserAPI instagramParserAPI = new InstagramParserAPI("코티피암");
+        model.addAttribute("instaThumbnails",instagramParserAPI.getThumbnailArray());
 
         if(InstagramAccessToken == null || "".equals(InstagramAccessToken)) {
             logger.debug("토큰이 존재하지 않음");

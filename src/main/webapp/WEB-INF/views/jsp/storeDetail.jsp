@@ -55,9 +55,13 @@
 
         $(window).load(function () {
             initializePage();
-
-
         });
+
+
+
+
+
+
 
 
     </script>
@@ -115,7 +119,11 @@
 
 <div class="container-fluid">
     <hr>
-    여기에 인스타그램 api가 들어갑니다 - 준영
+<ul>
+    <c:forEach var="thumbnail" items="${instaThumbnails}">
+        <li><img src="${thumbnail}"/></li>
+    </c:forEach>
+</ul>
     <hr>
 </div>
 <a href="/map.soul">
