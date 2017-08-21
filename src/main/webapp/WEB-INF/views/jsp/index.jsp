@@ -10,8 +10,8 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css">
-    <script src="/resources/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/resources/css/soulcoffee.css">
+    <script src="/resources/js/bootstrap.min.js"></script>
     <script type="text/javascript">
 
         function initializePage() {
@@ -58,7 +58,7 @@
         <div class="main_dim">
             <div class="main_title">
                 <h3 class="cafe_title">${cafe.cafe_nm}</h3>
-                <p class="text-left">${cafe.road_addr_base} | ${cafe.cafe_bgn_tm} ~ ${cafe.cafe_end_tm}</p>
+                <p class="text-left">${cafe.road_addr_dtls}</p>
             </div>
             <div class="main_layer">
                 <p class="text-right">
