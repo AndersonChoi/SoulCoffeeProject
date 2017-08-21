@@ -108,7 +108,7 @@ public class DataBookController {
 
         */
 
-        InstagramParserAPI instagramParserAPI = new InstagramParserAPI("서울스퀘어");
+        InstagramParserAPI instagramParserAPI = new InstagramParserAPI("카페블랙드럼");
         model.addAttribute("instaThumbnails",instagramParserAPI.getThumbnailArray());
         return "storeDetail";
     }

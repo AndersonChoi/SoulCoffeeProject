@@ -78,11 +78,48 @@
     </div>
 </nav>
 <div class="container store_detail_infomation_layer">
-    <div class="container">
 
-        <img src="/resources/img/jumbotron_bg4.jpg" class="img-responsive" alt="Responsive image">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <c:forEach var="thumbnail" items="${instaThumbnails}" varStatus="status">
+                    <c:choose>
+                        <c:when test="${status.index == '0'}">
+                            <li class="active" data-target="#myCarousel" data-slide-to="${status.index}" ></li>
+                        </c:when>
+                        <c:otherwise>
+                            <li data-target="#myCarousel" data-slide-to="${status.index}"></li>
+                        </c:otherwise>
+                    </c:choose>
+                </c:forEach>
+            </ol>
 
-    </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <c:forEach var="thumbnail" items="${instaThumbnails}" varStatus="status">
+                <c:choose>
+                <c:when test="${status.index == '0'}">
+                <div class="active item">
+                    </c:when>
+                    <c:otherwise>
+                    <div class="item">
+                        </c:otherwise>
+                        </c:choose>
+                        <img src="${thumbnail}" style="width:100%;">
+                    </div>
+                    </c:forEach>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
 
     <div class="store_detail_infomation">
         <h1 class="store_detail_info_title">Black Drum</h1>
@@ -117,15 +154,6 @@
     </div>
 </div>
 
-<div class="container-fluid">
-    <hr>
-<ul>
-    <c:forEach var="thumbnail" items="${instaThumbnails}">
-        <li><img src="${thumbnail}"/></li>
-    </c:forEach>
-</ul>
-    <hr>
-</div>
 <a href="/map.soul">
     <div id="map" class="store_detail_map"></div>
     <script type="text/javascript"

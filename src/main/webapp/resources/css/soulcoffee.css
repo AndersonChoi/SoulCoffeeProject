@@ -30,7 +30,7 @@ body {
 }
 
 .main_dim {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .main_layer {
@@ -97,4 +97,11 @@ footer .glyphicon {
 
 .navbar .container .navbar-header .navbar-brand {
     color: white;
+}
+.tales {
+    width: 100%;
+}
+.carousel-inner{
+    width:100%;
+    max-height: 260px !important;
 }
