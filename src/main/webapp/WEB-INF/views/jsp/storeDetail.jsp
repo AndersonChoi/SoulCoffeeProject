@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css">
     <script src="/resources/js/bootstrap.min.js"></script>
+    <script src="/resources/js/jquery.mobile.custom.min.js"></script>
     <link rel="stylesheet" href="/resources/css/soulcoffee.css">
     <script type="text/javascript">
 
@@ -49,6 +50,14 @@
                         window.location.hash = hash;
                     });
                 } // End if
+            });
+
+            // Register swipe event handlers
+            $("#myCarousel").swiperight(function() {
+                $(this).carousel('prev');
+            });
+            $("#myCarousel").swipeleft(function() {
+                $(this).carousel('next');
             });
 
         }
