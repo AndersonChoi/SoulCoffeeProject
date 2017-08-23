@@ -1,0 +1,11 @@
+.title_top{
+    font-family: 'Shrikhand', cursive;
+    font-size: 100%;
+    color: rgba(256, 256, 245, 0.8);
+
+}
+.title_bottom{
+    font-family: 'Shrikhand', cursive;
+    font-size: 300%;
+    color: rgba(256, 256, 245, 0.8);
+}

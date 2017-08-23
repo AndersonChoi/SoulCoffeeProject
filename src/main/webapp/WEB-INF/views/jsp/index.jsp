@@ -10,7 +10,9 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     <link rel="stylesheet" href="/resources/css/soulcoffee.css">
+    <link rel="stylesheet" href="/resources/css/soulcoffee.font.css">
     <script src="/resources/js/bootstrap.min.js"></script>
     <script type="text/javascript">
 
@@ -30,28 +32,13 @@
     </script>
 </head>
 <body>
-<!-- Fixed navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_main"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Soul Coffee</a>
-        </div>
-        <div id="navbar_main" class="collapse navbar-collapse ">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Default</a></li>
-                <li><a href="#">Static top</a></li>
-                <li class="active"><a href="#">Fixed top <span class="sr-only">(current)</span></a></li>
-            </ul>
-        </div>
+<div class="fixbar" >
+    <div class="bottom_gradient">
+        <div class="center_title"><span class="title_top">THE</span><br><span class="title_bottom">Soul Coffee</span></div>
     </div>
-</nav>
+</div>
+
+<div class="main">
 <c:forEach var="cafe" items="${cafes}">
     <div id="main_button" class="container-fluid main_title_background"
          style="background-image: url(/resources/img/${cafe.cafe_seq_no}.jpg); ">
@@ -69,6 +56,7 @@
         </div>
     </div>
 </c:forEach>
+</div>
 
 <footer class="container-fluid text-center">
     <a href="#myPage" title="To Top">

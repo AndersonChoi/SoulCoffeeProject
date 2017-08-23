@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css">
     <script src="/resources/js/bootstrap.min.js"></script>
+    <script src="/resources/js/jquery.mobile.custom.min.js"></script>
     <link rel="stylesheet" href="/resources/css/soulcoffee.css">
     <script type="text/javascript">
 
@@ -49,6 +50,14 @@
                         window.location.hash = hash;
                     });
                 } // End if
+            });
+
+            // Register swipe event handlers
+            $("#myCarousel").swiperight(function() {
+                $(this).carousel('prev');
+            });
+            $("#myCarousel").swipeleft(function() {
+                $(this).carousel('next');
             });
 
         }
@@ -123,7 +132,13 @@
 
     <div class="store_detail_infomation">
         <h1 class="store_detail_info_title">Black Drum</h1>
-
+        <div>
+            <div id="hashtags"><b>#전기콘센트많은 #조용한 #분위기좋은</b></div>
+            <br>
+            <div id="openingHour">Opening Hours : 09:00 - 20:00, 매주 일요일 휴무</div>
+            <div id="address">Address : 서울특별시 중구 남대문로5가 한강대로 416</div>
+            <br>
+        </div>
         <table class="table">
             <thead>
             <tr>
@@ -150,7 +165,6 @@
             </tr>
             </tbody>
         </table>
-        여기에 제목 및 내용 그리고 주소 좋아요수 등이 들어갑니다 - 준영
     </div>
 </div>
 
