@@ -36,8 +36,11 @@
                 topPercentage = (200 - top) / 200 * 100;
                 $(".fixbar").css("height", 200-(100-topPercentage)*1.5);
                 $(".center_title").css("margin-top", 75-(100-topPercentage));
+            }else{
+                $(".fixbar").css("height", 200-(100-0)*1.5);
+                $(".center_title").css("margin-top", 75-(100-0));
             }
-        } , 5);
+        } , 1);
 
 
     </script>
