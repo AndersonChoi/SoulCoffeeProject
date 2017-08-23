@@ -90,7 +90,7 @@
     </div>
 </div>
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg);">
+<div class="jumbotron" style="background-image: url(/resources/img/4.jpg);">
     <div index.jspclass="container">
         <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
@@ -129,7 +129,7 @@
     </div>
 </div>
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg);">
+<div class="jumbotron" style="background-image: url(/resources/img/4.jpg);">
     <div class="container">
         <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
@@ -168,7 +168,7 @@
     </div>
 </div>
 
-<div class="jumbotron" style="background-image: url(/resources/img/jumbotron_bg4.jpg);">
+<div class="jumbotron" style="background-image: url(/resources/img/4.jpg);">
     <div class="container">
         <h1 class="main_title" style="color:white;">Black Drum</h1>
         <p style="color:white;">
