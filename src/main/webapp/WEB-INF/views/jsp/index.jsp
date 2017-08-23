@@ -5,12 +5,13 @@
 <head>
     <title>SeoulCoffee</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2A2C2B">
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="/resources/css/soulcoffee.css">
     <link rel="stylesheet" href="/resources/css/soulcoffee.font.css">
     <script src="/resources/js/bootstrap.min.js"></script>
@@ -33,15 +34,13 @@
 </head>
 <body>
 <div class="fixbar" >
-    <div class="bottom_gradient">
         <div class="center_title"><span class="title_top">THE</span><br><span class="title_bottom">Soul Coffee</span></div>
-    </div>
 </div>
 
 <div class="main">
 <c:forEach var="cafe" items="${cafes}">
     <div id="main_button" class="container-fluid main_title_background"
-         style="background-image: url(/resources/img/${cafe.cafe_seq_no}.jpg); ">
+         style="background-image: url(/resources/img/${cafe.cafe_seq_no%5+1}.jpg); ">
         <div class="main_dim">
             <div class="main_title">
                 <h3 class="cafe_title">${cafe.cafe_nm}</h3>
