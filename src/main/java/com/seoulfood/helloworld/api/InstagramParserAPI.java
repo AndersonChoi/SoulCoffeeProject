@@ -47,7 +47,6 @@ public class InstagramParserAPI {
                     JSONObject top_posts = (JSONObject) tagJSON.get("top_posts");
                     resultNodes = (JSONArray) top_posts.get("nodes");
 
-                    System.out.println("====== " +resultNodes);
                     listdata = new ArrayList<String>();
                     if (resultNodes != null) {
                         for (i= 0;i<resultNodes.size();i++){

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
     <link rel="stylesheet" href="/resources/css/soulcoffee.css">
     <link rel="stylesheet" href="/resources/css/soulcoffee.font.css">
     <script src="/resources/js/bootstrap.min.js"></script>
@@ -19,28 +20,28 @@
 
         function initializePage() {
 
-            $("#main_button").click(function (e) {
+            $(".main_button").click(function (e) {
                 location.href = '/storeDetail.soul';
             });
 
         }
 
         $(window).load(function () {
-            initializePage();
+            //initializePage();
         });
 
-        setInterval(function() {
+        setInterval(function () {
             var top = $(window).scrollTop();
             var topPercentage = 100;
             if (top - 200 < 0) {
                 topPercentage = (200 - top) / 200 * 100;
-                $(".fixbar").css("height", 200-(100-topPercentage)*1.5);
-                $(".center_title").css("margin-top", 75-(100-topPercentage));
-            }else{
-                $(".fixbar").css("height", 200-(100-0)*1.5);
-                $(".center_title").css("margin-top", 75-(100-0));
+                $(".fixbar").css("height", 200 - (100 - topPercentage) * 1.5);
+                $(".center_title").css("margin-top", 75 - (100 - topPercentage));
+            } else {
+                $(".fixbar").css("height", 200 - (100 - 0) * 1.5);
+                $(".center_title").css("margin-top", 75 - (100 - 0));
             }
-        } , 1);
+        }, 1);
 
 
     </script>
@@ -52,15 +53,15 @@
 
 <div class="main">
     <c:forEach var="cafe" items="${cafes}">
-        <div id="main_button" class="main_title_background"
+        <div class="main_title_background main_button" onclick="location.href = '/storeDetail.soul?cafeNo=${cafe.cafe_nm}';"
              style="background-image: url(/resources/img/${cafe.cafe_seq_no%5+1}.jpg); ">
             <div class="main_dim">
                 <div class="main_title">
                     <h3 class="cafe_title">${cafe.cafe_nm}</h3>
-                    <p class="text-left">${cafe.road_addr_dtls}</p>
+                    <p class="text-left cafe_road">${cafe.road_addr_dtls}</p>
                 </div>
                 <div class="main_layer">
-                    <p class="text-right">
+                    <p class="text-right main_price">
                         <del>4,500원</del>
                     </p>
                     <p class="text-right main_final_price">2,000원</p>

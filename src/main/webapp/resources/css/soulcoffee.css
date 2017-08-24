@@ -29,11 +29,13 @@ body {
 }
 
 .main_dim {
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    height: 200px;
 }
 
 .main_layer {
-    margin: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
     position: absolute;
     right: 0px;
     bottom: 0px;
@@ -45,11 +47,25 @@ body {
 }
 
 .main_final_price {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
     font-size: 200%;
+}
+.main_price{
+    margin-right: 3px;
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-size: 100%;
 }
 
 .cafe_title {
-    letter-spacing: 7px;
+    letter-spacing: 2px;
+    font-family: 'Jeju Gothic';
+    font-style: normal;
+}
+.cafe_road{
+    font-family: 'Jeju Gothic';
+    font-style: normal;
 }
 
 .navbar-left {

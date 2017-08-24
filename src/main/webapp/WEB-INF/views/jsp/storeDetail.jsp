@@ -131,7 +131,7 @@
             </div>
 
     <div class="store_detail_infomation">
-        <h1 class="store_detail_info_title">Black Drum</h1>
+        <h1 class="store_detail_info_title">${cafeName}</h1>
         <div>
             <div id="hashtags"><b>#전기콘센트많은 #조용한 #분위기좋은</b></div>
             <br>
