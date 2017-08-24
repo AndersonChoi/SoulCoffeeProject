@@ -1,11 +1,18 @@
 .title_top{
+    line-height: 40px;
     font-family: 'Shrikhand', cursive;
     font-size: 100%;
     color: rgba(256, 256, 245, 0.8);
 
 }
-.title_bottom{
+.title_middle{
     font-family: 'Shrikhand', cursive;
     font-size: 300%;
+    color: rgba(256, 256, 245, 0.8);
+}
+.title_bottom{
+    letter-spacing: 5px;
+    font-family: 'Nanum Gothic';
+    font-size: 100%;
     color: rgba(256, 256, 245, 0.8);
 }

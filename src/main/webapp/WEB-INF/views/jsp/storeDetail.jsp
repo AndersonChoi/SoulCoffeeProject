@@ -31,7 +31,7 @@
             });
 
 
-            $("footer a[href='#myPage']").on('click', function (event) {
+            $("footer a[href='#topPage']").on('click', function (event) {
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
                     // Prevent default anchor click behavior
@@ -53,10 +53,10 @@
             });
 
             // Register swipe event handlers
-            $("#myCarousel").swiperight(function() {
+            $("#myCarousel").swiperight(function () {
                 $(this).carousel('prev');
             });
-            $("#myCarousel").swipeleft(function() {
+            $("#myCarousel").swipeleft(function () {
                 $(this).carousel('next');
             });
 
@@ -67,34 +67,20 @@
         });
 
 
-
-
-
-
-
-
     </script>
 </head>
-<body id="myPage">
-<!-- Fixed navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <button onclick="javascript:history.back();" type="button" class="navbar-toggle navbar-left"><span
-                class="glyphicon glyphicon-chevron-left" style="color:white"></span></button>
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Soul Coffee</a>
-        </div>
-    </div>
-</nav>
-<div class="container store_detail_infomation_layer">
-
+<body id="topPage">
+<div class="container-fluid store_detail_infomation_layer">
+    <h1 class="align-middle store_detail_info_title">${cafeName}</h1>
+    <div class="row">
+        <c:set var="thumbnailCount" value="0"/>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <c:forEach var="thumbnail" items="${instaThumbnails}" varStatus="status">
                     <c:choose>
                         <c:when test="${status.index == '0'}">
-                            <li class="active" data-target="#myCarousel" data-slide-to="${status.index}" ></li>
+                            <li class="active" data-target="#myCarousel" data-slide-to="${status.index}"></li>
                         </c:when>
                         <c:otherwise>
                             <li data-target="#myCarousel" data-slide-to="${status.index}"></li>
@@ -128,71 +114,57 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
                 </a>
+
             </div>
-
-    <div class="store_detail_infomation">
-        <h1 class="store_detail_info_title">${cafeName}</h1>
-        <div>
-            <div id="hashtags"><b>#전기콘센트많은 #조용한 #분위기좋은</b></div>
-            <br>
-            <div id="openingHour">Opening Hours : 09:00 - 20:00, 매주 일요일 휴무</div>
-            <div id="address">Address : 서울특별시 중구 남대문로5가 한강대로 416</div>
-            <br>
         </div>
-        <table class="table">
-            <thead>
-            <tr>
-                <th>메뉴</th>
-                <th>here</th>
-                <th>to go</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>아메리카노</td>
-                <td>4500원</td>
-                <td>2800원</td>
-            </tr>
-            <tr>
-                <td>밀크티</td>
-                <td>5500원</td>
-                <td>3400원</td>
-            </tr>
-            <tr>
-                <td>에이드</td>
-                <td>6000원</td>
-                <td>4500원</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="store_detail_infomation">
+            <div>
+                <div id="hashtags"><b>#전기콘센트많은 #조용한 #분위기좋은</b></div>
+                <br>
+                <div id="openingHour">Opening Hours : 09:00 - 20:00, 매주 일요일 휴무</div>
+                <div id="address">Address : 서울특별시 중구 남대문로5가 한강대로 416</div>
+                <br>
+            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>메뉴</th>
+                    <th>here</th>
+                    <th>to go</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>아메리카노</td>
+                    <td>4500원</td>
+                    <td>2800원</td>
+                </tr>
+                <tr>
+                    <td>밀크티</td>
+                    <td>5500원</td>
+                    <td>3400원</td>
+                </tr>
+                <tr>
+                    <td>에이드</td>
+                    <td>6000원</td>
+                    <td>4500원</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
 
-<a href="/map.soul">
-    <div id="map" class="store_detail_map"></div>
-    <script type="text/javascript"
-            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCa0rIVaCLdOwzV8WyKUY9rS0PpcWZQDsM"></script>
-</a>
-<div class="container-fluid">
-    <hr>
-
-    <table class="table bottom_table">
-        <tbody>
-        <tr>
-            <td><span class="glyphicon glyphicon-chevron-left" style="color:white"></span></td>
-            <td><span class="glyphicon glyphicon-chevron-left" style="color:white"></span></td>
-            <td><span class="glyphicon glyphicon-chevron-left" style="color:white"></span></td>
-        </tr>
-        </tbody>
-    </table>
-    <hr>
-</div>
-<footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up"></span>
+    <a href="/map.soul">
+        <div id="map" class="store_detail_map"></div>
+        <script type="text/javascript"
+                src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCa0rIVaCLdOwzV8WyKUY9rS0PpcWZQDsM"></script>
     </a>
-    <p>Bootstrap Theme Made By <a href="#">wonyoung....</a></p>
-</footer>
+    <hr>
+    <footer class="container-fluid text-center">
+        <a href="#topPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </footer>
 
 </body>
 </html>

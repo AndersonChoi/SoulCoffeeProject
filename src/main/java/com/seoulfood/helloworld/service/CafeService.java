@@ -5,9 +5,9 @@ import com.seoulfood.helloworld.domain.Cafe;
 
 import java.util.List;
 
-public interface DataBookService {
+public interface CafeService {
 
-    List<Book> selectAllBook();
+    Cafe getCafeInformation(int cafe_seq_no);
     List<Cafe> findAllCafe();
 
 }

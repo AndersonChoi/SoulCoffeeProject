@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-public interface DataBookDAO {
-    List<Book> getBookInfo();
+public interface CafeDAO {
+    Cafe getCafeInformation(int cafe_seq_no);
     List<Cafe> findAllCafe();
 }

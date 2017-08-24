@@ -19,41 +19,64 @@
     <script type="text/javascript">
 
         function initializePage() {
+            $("footer a[href='#topPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-            $(".main_button").click(function (e) {
-                location.href = '/storeDetail.soul';
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
             });
 
         }
 
         $(window).load(function () {
-            //initializePage();
+            initializePage();
         });
 
         setInterval(function () {
             var top = $(window).scrollTop();
-            var topPercentage = 100;
+            var topPercentage = 50;
+            var titleTopMargin = 10;
             if (top - 200 < 0) {
                 topPercentage = (200 - top) / 200 * 100;
                 $(".fixbar").css("height", 200 - (100 - topPercentage) * 1.5);
-                $(".center_title").css("margin-top", 75 - (100 - topPercentage));
+                $(".center_title").css("margin-top", titleTopMargin - (50 - topPercentage));
             } else {
                 $(".fixbar").css("height", 200 - (100 - 0) * 1.5);
-                $(".center_title").css("margin-top", 75 - (100 - 0));
+                $(".center_title").css("margin-top", titleTopMargin - (40 - 0));
             }
         }, 1);
 
 
     </script>
 </head>
-<body>
+<body  id="topPage">
 <div class="fixbar">
-    <div class="center_title"><span class="title_top">THE</span><br><span class="title_bottom">Soul Coffee</span></div>
+    <div class="center_title">
+        <span class="title_top">THE</span>
+        <br>
+        <span class="title_middle">Soul Coffee</span>
+        <br>
+        <span class="title_bottom">| FOR SEOUL SQUARE |</span>
+    </div>
+    <span class="glyphicon glyphicon-info-sign"></span>
 </div>
-
 <div class="main">
     <c:forEach var="cafe" items="${cafes}">
-        <div class="main_title_background main_button" onclick="location.href = '/storeDetail.soul?cafeNo=${cafe.cafe_nm}';"
+        <div class="main_title_background main_button" onclick="location.href = '/storeDetail.soul?cafeNo=${cafe.cafe_seq_no}';"
              style="background-image: url(/resources/img/${cafe.cafe_seq_no%5+1}.jpg); ">
             <div class="main_dim">
                 <div class="main_title">
@@ -71,19 +94,12 @@
     </c:forEach>
 </div>
 
+<hr>
 <footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-us"></span>
+    <a href="#topPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>Bootstrap Theme Made By <a href="#">wonyoung....</a></p>
 </footer>
-
-
-<!--
-<a id="map_button" href="/map.soul" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-map-marker"></span>
-</a>-->
-
 
 </body>
 </html>
