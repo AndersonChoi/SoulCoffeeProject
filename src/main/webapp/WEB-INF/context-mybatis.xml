@@ -9,7 +9,23 @@
                            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 
     <!-- DB 접속정보 설정파일 -->
-    <context:property-placeholder location="classpath:mybatis/properties/db.properties"/>
+    <bean id="environmentVariablesConfiguration" class="org.jasypt.encryption.pbe.config.EnvironmentStringPBEConfig">
+        <property name="algorithm" value="PBEWithMD5AndDES" />
+        <property name="password" value="passwordkey" />
+    </bean>
+
+    <bean id="configurationEncryptor" class="org.jasypt.encryption.pbe.StandardPBEStringEncryptor">
+        <property name="config" ref="environmentVariablesConfiguration" />
+    </bean>
+
+    <bean class="org.jasypt.spring31.properties.EncryptablePropertyPlaceholderConfigurer">
+        <constructor-arg ref="configurationEncryptor" />
+        <property name="locations">
+            <list>
+                <value>classpath:mybatis/properties/db.properties</value>
+            </list>
+        </property>
+    </bean>
 
     <!-- 커넥션풀을 활용한 dataSource Bean 설정 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
