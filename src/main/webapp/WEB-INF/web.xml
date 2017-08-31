@@ -30,5 +30,7 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.soul</url-pattern>
     </servlet-mapping>
-
+    <welcome-file-list>
+        <welcome-file>index.soul</welcome-file>
+    </welcome-file-list>
 </web-app>
