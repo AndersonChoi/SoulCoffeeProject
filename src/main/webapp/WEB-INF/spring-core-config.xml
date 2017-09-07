@@ -11,4 +11,23 @@
 
     <context:component-scan base-package="com.seoulfood.helloworld" />
 
+    <bean id="encryptorConfig" class="org.jasypt.encryption.pbe.config.EnvironmentStringPBEConfig">
+        <property name="algorithm" value="PBEWithMD5AndDES"/>
+        <property name="password" value="thdnfvnem" />
+    </bean>
+
+    <bean id="configurationEncryptor" class="org.jasypt.encryption.pbe.StandardPBEStringEncryptor">
+        <property name="config" ref="encryptorConfig"/>
+    </bean>
+
+    <bean class="org.jasypt.spring31.properties.EncryptablePropertyPlaceholderConfigurer">
+        <constructor-arg ref="configurationEncryptor" />
+        <property name="locations">
+            <list>
+                <value>/WEB-INF/properties/db.properties</value>
+            </list>
+        </property>
+
+    </bean>
+
 </beans>

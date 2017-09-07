@@ -8,8 +8,6 @@
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
                            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 
-    <!-- DB 접속정보 설정파일 -->
-    <context:property-placeholder location="classpath:mybatis/properties/db.properties"/>
 
     <!-- 커넥션풀을 활용한 dataSource Bean 설정 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
@@ -17,7 +15,6 @@
         <property name="url" value="${jdbc.url}"/>
         <property name="username" value="${jdbc.user}"/>
         <property name="password" value="${jdbc.pwd}"/>
-
         <property name="maxActive" value="50"/>
         <property name="maxIdle" value="30"/>
         <property name="minIdle" value="30"/>
@@ -37,14 +34,5 @@
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.seoulfood.helloworld.dao" />
     </bean>
-
-    <!-- 트랜잭션 관리자. id가 transactionManager이면, 아래 tx:annotation-driven에서 transactionManager 속성을 지정할 필요 없음 -->
-    <!--<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
-        <!--<property name="dataSource" ref="dataSource"/>-->
-    <!--</bean>-->
-
-    <!-- 애노테이션으로 트랜잭션 설정 할 수 있도록 -->
-    <!--<tx:annotation-driven />-->
-    <!--tx:annotation-driven transaction-manager="transactionManager" /-->
 
 </beans>
