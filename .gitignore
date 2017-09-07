@@ -2,4 +2,4 @@
 .gradle/
 .idea/
 build/
-/src/main/resources/mybatis/properties/db.properties
+/src/main/webapp/WEB-INF/properties/db.properties
