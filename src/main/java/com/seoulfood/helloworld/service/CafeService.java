@@ -1,6 +1,5 @@
 package com.seoulfood.helloworld.service;
 
-import com.seoulfood.helloworld.domain.Book;
 import com.seoulfood.helloworld.domain.Cafe;
 
 import java.util.List;

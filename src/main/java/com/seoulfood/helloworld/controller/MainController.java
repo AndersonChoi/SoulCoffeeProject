@@ -41,7 +41,7 @@ public class MainController {
 
 
         Cafe cafeInformation = cafeService.getCafeInformation(cafeNo);
-        InstagramParserAPI instagramParserAPI = new InstagramParserAPI(cafeInformation.getCafe_nm().replaceAll(" ", ""));
+        InstagramParserAPI instagramParserAPI = new InstagramParserAPI(cafeInformation.getInsta_sch_tag().replaceAll(" ", ""));
         ArrayList<String> thumbnailArray = new ArrayList<>();
         try {
             thumbnailArray = instagramParserAPI.getThumbnailArray();

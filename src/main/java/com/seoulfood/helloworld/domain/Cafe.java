@@ -33,6 +33,9 @@ public class Cafe {
     private String customer_rate2_cnt;
     private String customer_rate1_cnt;
     private String customer_rate_total_cnt;
+    private String insta_sch_tag;
+    private String homepage;
+    private String description;
     private String create_dt;
     private String update_dt;
 

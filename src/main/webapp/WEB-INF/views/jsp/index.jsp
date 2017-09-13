@@ -72,22 +72,15 @@
         <br>
         <span class="title_bottom">| FOR SEOUL SQUARE |</span>
     </div>
-    <span class="glyphicon glyphicon-info-sign"></span>
 </div>
 <div class="main">
     <c:forEach var="cafe" items="${cafes}">
         <div class="main_title_background main_button" onclick="location.href = '/storeDetail.soul?cafeNo=${cafe.cafe_seq_no}';"
-             style="background-image: url(/resources/img/${cafe.cafe_seq_no%5+1}.jpg); ">
+             style="background-image: url(/resources/img/${cafe.cafe_seq_no}.jpg); ">
             <div class="main_dim">
                 <div class="main_title">
                     <h3 class="cafe_title">${cafe.cafe_nm}</h3>
                     <p class="text-left cafe_road">${cafe.road_addr_dtls}</p>
-                </div>
-                <div class="main_layer">
-                    <p class="text-right main_price">
-                        <del>4,500원</del>
-                    </p>
-                    <p class="text-right main_final_price">2,000원</p>
                 </div>
             </div>
         </div>
