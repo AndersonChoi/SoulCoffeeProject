@@ -119,10 +119,15 @@
         </div>
         <div class="store_detail_infomation">
             <div>
-                <div id="hashtags"><b>#전기콘센트많은 #조용한 #분위기좋은</b></div>
+                <hr>
+                <div id="hashtags"><b>
+                    <c:forEach var="cafetag" items="${cafeTagArray}">
+                        #${cafetag.hash_tag}&nbsp
+                    </c:forEach>
+                </b></div>
                 <br>
-                <div id="openingHour">Opening Hours : 09:00 - 20:00, 매주 일요일 휴무</div>
-                <div id="address">Address : 서울특별시 중구 남대문로5가 한강대로 416</div>
+                <div id="openingHour">시간 : ${cafeBeginTime} ~ ${cafeEndTime}, 매주 일요일 휴무</div>
+                <div id="address">위치 : ${cafeAddress}</div>
                 <br>
             </div>
             <table class="table">

@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
-@Service("DataBookService")
+@Service("CafeService")
 public class CafeServiceImpl implements CafeService {
 
-    @Resource(name = "dataDAO")
+    @Resource(name = "CafeDAO")
     private CafeDAO cafeDAO;
 
     public Cafe getCafeInformation(int cafe_seq_no) {

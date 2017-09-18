@@ -7,8 +7,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("CafeDAO")
-public class CafeDAOImpl implements CafeDAO {
+@Repository("CafeTagDAO")
+public class CafeTagDAOImpl implements CafeTagDAO {
 
     @Autowired
     private SqlSession sqlSession;
@@ -16,11 +16,8 @@ public class CafeDAOImpl implements CafeDAO {
         this.sqlSession = sqlSession;
     }
 
-    public Cafe getCafeInformation(int cafe_seq_no){
-        return sqlSession.selectOne("getCafeInfo",cafe_seq_no);
-    }
-    public List<Cafe> findAllCafe(){
-        return sqlSession.selectList("findAllCafe");
+    public List<String> findCafeTags(int cafe_seq_no){
+        return sqlSession.selectList("findCafeTags",cafe_seq_no);
     }
 
 }

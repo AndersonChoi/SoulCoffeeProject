@@ -3,6 +3,7 @@ package com.seoulfood.helloworld.controller;
 import com.seoulfood.helloworld.api.InstagramParserAPI;
 import com.seoulfood.helloworld.domain.Cafe;
 import com.seoulfood.helloworld.service.CafeService;
+import com.seoulfood.helloworld.service.CafeTagService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class MainController {
@@ -20,10 +22,12 @@ public class MainController {
     private static final Logger logger = LoggerFactory.getLogger(MainController.class);
     private static String InstagramAccessToken = "";
     private final CafeService cafeService;
+    private final CafeTagService cafeTagService;
 
     @Autowired
-    public MainController(CafeService cafeService) {
+    public MainController(CafeService cafeService, CafeTagService cafeTagService) {
         this.cafeService = cafeService;
+        this.cafeTagService = cafeTagService;
     }
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
@@ -34,15 +38,13 @@ public class MainController {
 
     @RequestMapping(value = "/storeDetail", method = RequestMethod.GET)
     public String storeDetail(Model model, @RequestParam(value = "cafeNo", required = true) int cafeNo) throws Exception {
-
-
-        //임시로 cafeno에 cafe네임을 들고오게 하였음 추후 수정예정
-        logger.info("cafeNo  ====== " + cafeNo);
-
-
         Cafe cafeInformation = cafeService.getCafeInformation(cafeNo);
         InstagramParserAPI instagramParserAPI = new InstagramParserAPI(cafeInformation.getInsta_sch_tag().replaceAll(" ", ""));
         ArrayList<String> thumbnailArray = new ArrayList<>();
+        List<String> cafeTagArray = new ArrayList<>();
+
+        cafeTagArray = cafeTagService.findCafeTags(cafeNo);
+
         try {
             thumbnailArray = instagramParserAPI.getThumbnailArray();
         } catch (Exception e) {
@@ -53,6 +55,10 @@ public class MainController {
 
 
         model.addAttribute("cafeName", cafeInformation.getCafe_nm());
+        model.addAttribute("cafeBeginTime", cafeInformation.getCafe_bgn_tm());
+        model.addAttribute("cafeEndTime", cafeInformation.getCafe_end_tm());
+        model.addAttribute("cafeAddress", cafeInformation.getRoad_addr_dtls());
+        model.addAttribute("cafeTagArray", cafeTagArray);
 
 
         return "storeDetail";

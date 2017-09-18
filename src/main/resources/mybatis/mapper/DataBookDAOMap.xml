@@ -14,4 +14,10 @@
         WHERE CAFE_SEQ_NO = #{cafe_seq_no}
     </select>
 
+    <select id="findCafeTags" resultType="com.seoulfood.helloworld.domain.CafeTag" parameterType="java.lang.Integer">
+        SELECT *
+        FROM SEOULFOOD.SOUL_FOOD_CAFE_TAG
+        WHERE cafe_no = #{cafe_seq_no}
+    </select>
+
 </mapper>
