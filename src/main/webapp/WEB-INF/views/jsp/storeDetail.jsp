@@ -118,11 +118,10 @@
         <div class="store_detail_infomation">
             <div>
                 <hr>
-                <div id="hashtags"><b>
-                    <c:forEach var="cafetag" items="${cafeTagArray}">
-                        #${cafetag.hash_tag}&nbsp
-                    </c:forEach>
-                </b></div>
+                <c:forEach var="cafetag" items="${cafeTagArray}">
+                    <button class="btn btn-secondary btn-sm" onclick="location.href = 'https://www.instagram.com/explore/tags/${cafetag.hash_tag}/';" >#${cafetag.hash_tag}</button>
+                </c:forEach>
+                <br>
                 <br>
                 <div id="openingHour">시간 : ${cafeBeginTime} ~ ${cafeEndTime}, 매주 일요일 휴무</div>
                 <div id="address">위치 : ${cafeAddress}</div>
