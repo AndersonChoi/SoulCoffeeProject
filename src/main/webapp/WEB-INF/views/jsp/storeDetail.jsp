@@ -16,9 +16,7 @@
     <script type="text/javascript">
 
         function initializePage() {
-
-
-            var uluru = {lat: 37.555790, lng: 126.973712};
+            var uluru = {lat: ${cafeLatitude}, lng: ${cafeLongitude}};
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 16,
                 scrollwheel: false,
@@ -158,7 +156,7 @@
             </table>
         </div>
     </div>
-    <a href="http://maps.apple.com/?q=37.555790,126.973712" rel="noreferrer">
+    <a href="http://maps.apple.com/?q=${cafeLatitude},${cafeLongitude}" rel="noreferrer">
         <div id="map" class="store_detail_map"></div>
         <script type="text/javascript"
                 src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCa0rIVaCLdOwzV8WyKUY9rS0PpcWZQDsM"></script>

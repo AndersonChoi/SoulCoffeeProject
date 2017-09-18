@@ -58,6 +58,8 @@ public class MainController {
         model.addAttribute("cafeBeginTime", cafeInformation.getCafe_bgn_tm());
         model.addAttribute("cafeEndTime", cafeInformation.getCafe_end_tm());
         model.addAttribute("cafeAddress", cafeInformation.getRoad_addr_dtls());
+        model.addAttribute("cafeLatitude", cafeInformation.getLati_tude());
+        model.addAttribute("cafeLongitude", cafeInformation.getLongi_tude());
         model.addAttribute("cafeTagArray", cafeTagArray);
 
 
