@@ -11,6 +11,23 @@ body {
     left: 50%;
 }
 
+
+
+.discount_title {
+    color: black;
+    margin: 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.cafe_benefit{
+    text-shadow:
+            -3px 0px 3px white,
+            3px 0px 3px white,
+            6px 0px 6px white,
+            -6px 0px 6px white;
+}
+
 .main_title {
     color: white;
     margin: 10px;
@@ -84,7 +101,7 @@ body {
 
 .store_detail_info_title {
     font-family: 'Nanum Gothic Coding';
-    color: gray;
+    color: lightgrey;
 }
 
 .table {

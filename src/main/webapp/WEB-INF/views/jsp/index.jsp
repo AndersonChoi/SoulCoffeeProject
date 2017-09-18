@@ -82,6 +82,17 @@
                     <h3 class="cafe_title">${cafe.cafe_nm}</h3>
                     <p class="text-left cafe_road">${cafe.road_addr_dtls}</p>
                 </div>
+                <div class="discount_title">
+                    <c:if test="${cafe.emp_dsc_yn eq 'Y'}">
+                        <span class="text-left cafe_benefit">${cafe.emp_dsc_dtls}</span>
+                    </c:if>
+                    <c:if test="${cafe.pkg_dsc_yn eq 'Y'}">
+                        <span class="text-left cafe_benefit">${cafe.pkg_dsc_dtls}</span>
+                    </c:if>
+                    <c:if test="${cafe.time_dsc_yn eq 'Y'}">
+                        <span class="text-left cafe_benefit">${cafe.time_dsc_dtls}</span>
+                    </c:if>
+                </div>
             </div>
         </div>
     </c:forEach>

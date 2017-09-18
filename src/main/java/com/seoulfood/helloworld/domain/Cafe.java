@@ -21,6 +21,8 @@ public class Cafe {
     private String longi_tude;
     private String emp_dsc_yn;
     private String emp_dsc_dtls;
+    private String pkg_dsc_yn;
+    private String pkg_dsc_dtls;
     private String time_dsc_yn;
     private String time_dsc_dtls;
     private String membership_yn;
